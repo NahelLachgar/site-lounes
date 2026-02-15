@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Programme - Au Cœur Du Plessis</title>
+    <meta name="description"
+        content="Découvrez notre programme pour les élections municipales 2026 du Plessis-Bouchard. Initiatives pour la sécurité, l'éducation, la convivialité et bien plus.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icon (Font Awesome Removed) -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'plessis-purple': '#7c3aed',
+                        'plessis-orange': '#f97316',
+                    },
+                    fontFamily: {
+                        'sans': ['Open Sans', 'sans-serif'],
+                        'heading': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, #7c3aed, #f97316);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #7c3aed, #f97316);
+        }
+
+        .section-title {
+            background: linear-gradient(135deg, #7c3aed 0%, #f97316 100%);
+            color: white;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+            margin: 40px 0 30px 0;
+        }
+
+        .program-item {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .program-circle {
+            flex-shrink: 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin-top: 6px;
+        }
+
+        .program-text {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #374151;
+        }
+
+        .program-text strong {
+            color: #1f2937;
+            font-weight: 600;
+        }
+    </style>
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <!-- Header & Footer Injection -->
+    <script src="js/components.js"></script>
+    <script>
+        injectHeader('programme');
+    </script>
+
+    <!-- HEADER -->
+    <header class="pt-32 pb-12 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <span
+                    class="gradient-bg text-white px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wider">Notre
+                    programme</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-4 text-center">
+                Notre Programme
+            </h1>
+            <p class="text-xl text-gray-600 text-center">
+                Les thématiques clés de nos ambitions pour le Plessis-Bouchard.
+            </p>
+        </div>
+    </header>
+
+    <!-- THÉMATIQUES DU PROGRAMME -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Grid de 7 cartes -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+                <!-- Carte 1 -->
+                <a href="theme-cadre-de-vie.html" class="group cursor-pointer">
+                    <div
+                        class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+                        <div
+                            class="h-56 bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center overflow-hidden">
+                            <img src="images/programme/coulee-verte.jpg" alt="Cadre de vie"
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-heading font-bold text-plessis-purple mb-2">Urbanisme, environnement
+                                et logement</h3>
+                            <p class="text-gray-600 text-sm">Développer les espaces verts, améliorer la gestion des
+                                déchets et encourager la mobilité durable.</p>
+                            <div
+                                class="mt-4 text-plessis-purple font-bold flex items-center gap-2 group-hover:translate-x-2 transition">
+                                En savoir plus <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Carte 2 -->
+                <a href="theme-securite.html" class="group cursor-pointer">
+                    <div
+                        class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+                        <div
+                            class="h-56 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center overflow-hidden">
+                            <img src="images/programme/police.png" alt="Sécurité"
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-heading font-bold text-plessis-orange mb-2">Sécurité</h3>
+                            <p class="text-gray-600 text-sm">Renforcer les effectifs, déployer une présence mobile et
+                                investir dans la vidéosurveillance.</p>
+                            <div
+                                class="mt-4 text-plessis-orange font-bold flex items-center gap-2 group-hover:translate-x-2 transition">
+                                En savoir plus <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Carte 3 -->
+                <a href="theme-education.html" class="group cursor-pointer">
+                    <div
+                        class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+                        <div
+                            class="h-56 bg-gradient-to-br from-yellow-100 to-yellow-200 flex items-center justify-center overflow-hidden">
+                            <img src="images/programme/petite-enfance.webp" alt="Éducation"
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-heading font-bold text-plessis-purple mb-2">Petite enfance,
+                                périscolaire et école
+                            </h3>
+                            <p class="text-black text-sm">Une offre périscolaire diversifiée, une Maison de la
+                                Jeunesse, et des initiatives pour petite enfance.</p>
+                            <div
+                                class="mt-4 text-plessis-purple font-bold flex items-center gap-2 group-hover:translate-x-2 transition">
+                                En savoir plus <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Carte 4 -->
+                <a href="theme-intergenerationnel.html" class="group cursor-pointer">
+                    <div
+                        class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+                        <div
+                            class="h-56 bg-gradient-to-br from-pink-100 to-pink-200 flex items-center justify-center overflow-hidden">
+                            <img src="images/programme/seniors.png" alt="Intergénérationnel"
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-heading font-bold text-plessis-orange mb-2">Seniors, solidarité et
+                                santé</h3>
+                            <p class="text-gray-600 text-sm">Engagements envers les seniors, santé, famille et
+                                initiative solidaire numérique.</p>
+                            <div
+                                class="mt-4 text-plessis-orange font-bold flex items-center gap-2 group-hover:translate-x-2 transition">
+                                En savoir plus <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Carte 5 -->
+                <a href="theme-convivialite.html" class="group cursor-pointer">
+                    <div
+                        class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+                        <div
+                            class="h-56 bg-gradient-to-br from-red-100 to-red-200 flex items-center justify-center overflow-hidden">
+                            <img src="images/programme/convivialite.png" alt="Convivialité"
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-heading font-bold text-plessis-purple mb-2">Jeunesse, sport, lien
+                                social et culture
+                            </h3>
+                            <p class="text-gray-600 text-sm">Sports, culture, lien social, événements culturels et
+                                engagement jeunesse.</p>
+                            <div
+                                class="mt-4 text-plessis-purple font-bold flex items-center gap-2 group-hover:translate-x-2 transition">
+                                En savoir plus <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Carte 6 -->
+                <a href="theme-commerce.html" class="group cursor-pointer">
+                    <div
+                        class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+                        <div
+                            class="h-56 bg-gradient-to-br from-indigo-100 to-indigo-200 flex items-center justify-center overflow-hidden">
+                            <img src="images/programme/commerce.png" alt="Commerce"
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-heading font-bold text-plessis-orange mb-2">Commerce, démocratie
+                                locale et agents municipaux
+                            </h3>
+                            <p class="text-gray-600 text-sm">Soutenir nos commerçants locaux et dynamiser les espaces
+                                commerciaux.</p>
+                            <div
+                                class="mt-4 text-plessis-orange font-bold flex items-center gap-2 group-hover:translate-x-2 transition">
+                                En savoir plus <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        injectFooter();
+    </script>
+</body>
+
+</html>

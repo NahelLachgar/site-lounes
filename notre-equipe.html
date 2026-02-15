@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Équipe - Au Cœur Du Plessis</title>
+    <meta name="description"
+        content="Découvrez l'équipe engagée pour le Plessis-Bouchard. Des femmes et des hommes investis pour leur commune.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'plessis-purple': '#7c3aed',
+                        'plessis-orange': '#f97316',
+                    },
+                    fontFamily: {
+                        'sans': ['Open Sans', 'sans-serif'],
+                        'heading': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, #7c3aed, #f97316);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #7c3aed, #f97316);
+        }
+    </style>
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Footer Injection -->
+    <script src="js/components.js"></script>
+    <script>
+        injectHeader('equipe');
+    </script>
+
+    <!-- HEADER -->
+    <header class="pt-32 pb-12 bg-gradient-to-r from-purple-50 to-orange-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-4">
+                Notre Équipe
+            </h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                Des femmes et des hommes engagés pour l'avenir du Plessis-Bouchard
+            </p>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+
+        <!-- Team Grid -->
+        <div id="team-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Cards will be injected here -->
+        </div>
+
+    </main>
+
+    <script>
+        const teamMembers = [
+            {
+                "name": "Lounes LACHGAR",
+                "description": "<strong>Tête de liste</strong> - Formation universitaire en sciences politiques & plusieurs expériences institutionnelles (relations publiques, Conseil régional, institutions Européennes).",
+                "image": "images/equipe/lounes.webp"
+            },
+            {
+                "name": "Lindsey REIS",
+                "description": "<strong>Chargée de clientèle en banque</strong><br>Ex-parent d'élèves (tête de liste) élue sur deux écoles",
+                "image": "images/equipe/lindsey.webp"
+            },
+            {
+                "name": "Pierre DERVEAUX",
+                "description": "<strong>Retraité, cadre de la fonction publique et du privé</strong><br>Ex Adjoint au maire de la majorité sortante",
+                "image": "images/equipe/pierre.webp"
+            },
+            {
+                "name": "Catherine TALLEC",
+                "description": "<strong>Professeur des écoles à l'école Saint-Exupéry depuis plus de 20 ans</strong>",
+                "image": "images/equipe/catherine.webp"
+            },
+            {
+                "name": "Dominique MISMAN",
+                "description": "<strong>Inspecteur des finances publiques</strong><br>Ex-conseiller municipal d'opposition",
+                "image": "images/equipe/dominique.png"
+            },
+            {
+                "name": "Alexandra JULIARD",
+                "description": "<strong>Ex-cadre du privé et cheffe d'entreprise</strong><br>Ex-parent d'élèves élue sur trois écoles",
+                "image": "images/equipe/alexandra.webp"
+            },
+            {
+                "name": "Baptiste DUFAUD",
+                "description": "<strong>Professeur coordonnateur d'un dispositif ULIS</strong>",
+                "image": "images/equipe/baptiste.webp"
+            },
+            {
+                "name": "Isabelle LERIBLE",
+                "description": "<strong>Retraitée, cadre de la santé</strong><br>Membre d'une troupe de théâtre pendant 30 ans",
+                "image": "images/equipe/isabelle.webp"
+            },
+            {
+                "name": "Hervé GRUNDMAN",
+                "description": "<strong>Cadre de la fonction publique</strong><br>Coordinateur de clubs seniors à la Ville de Paris",
+                "image": "images/equipe/herve.webp"
+            },
+            {
+                "name": "Stéphanie CHEMIA",
+                "description": "<strong>Responsable de la pharmacie des HSN</strong><br>Présidente de l'association du centre commercial des HSN",
+                "image": "images/equipe/stephanie.webp"
+            },
+            {
+                "name": "Yohan COUDENYS",
+                "description": "<strong>Étudiant en sciences politiques</strong>",
+                "image": "images/equipe/yohan.webp"
+            },
+            {
+                "name": "Corinne LE CHAFFOTEC",
+                "description": "<strong>Directrice de la première enfance dans une ville de plus de 100 000 habitants</strong>",
+                "image": "images/equipe/corinne.webp"
+            },
+            {
+                "name": "Stéphane BROSSE",
+                "description": "<strong>Gestionnaire technique bâtiment</strong><br>33 ans aux services techniques du Plessis-Bouchard",
+                "image": "images/equipe/stephane.webp"
+            },
+            {
+                "name": "Virginie ZONCHELLO",
+                "description": "<strong>Auxiliaire de puériculture</strong><br>Ex-parent d'élève élue",
+                "image": "images/equipe/virginie.webp"
+            },
+            {
+                "name": "Guillaume POUGNAND",
+                "description": "<strong>Agent de maîtrise dans la fonction publique</strong><br>Spécialiste des questions de mobilité douces",
+                "image": "images/equipe/guillaume.webp"
+            },
+            {
+                "name": "Céline NEF",
+                "description": "<strong>Clerc de commissaire de justice</strong>",
+                "image": "images/equipe/celine.webp"
+            },
+            {
+                "name": "Marc CHAUWIN",
+                "description": "<strong>Chef de service en efficacité énergétique</strong>",
+                "image": "images/equipe/marc.webp"
+            },
+            {
+                "name": "Arwen BERTIN",
+                "description": "<strong>Étudiante en droit et en sciences politiques</strong>",
+                "image": "images/equipe/arwen.webp"
+            },
+            {
+                "name": "Thierry DHARTENAY",
+                "description": "<strong>Chef d'entreprise (artisan)</strong><br>Fondateur du club de volley-ball du Plessis-Bouchard",
+                "image": "images/equipe/thierry.webp"
+            },
+            {
+                "name": "Erika REILHAN",
+                "description": "<strong>Ex-militaire et Cadre du privé</strong><br>Coordinatrice des conseils de quartiers (secteur est)",
+                "image": "images/equipe/erika.webp"
+            },
+            {
+                "name": "Michel LARDINAT",
+                "description": "<strong>Retraité du secteur bancaire</strong><br>Membre d'un conseil de quartier et Ex-membre du conseil syndical du Clos Saint-Georges",
+                "image": "images/equipe/michel.webp"
+            },
+            {
+                "name": "Teresa PHILIPPON",
+                "description": "<strong>Professeur d'espagnol</strong>",
+                "image": "images/equipe/teresa.webp"
+            },
+            {
+                "name": "Jérôme ZONCHELLO",
+                "description": "<strong>Technicien supports utilisateurs, systèmes et réseaux</strong>",
+                "image": "images/equipe/jerome.webp"
+            },
+            {
+                "name": "Sophie MARTINEZ",
+                "description": "<strong>Coiffeuse au Plessis-Bouchard depuis 1998 et assesseure prud'homale</strong>",
+                "image": "images/equipe/sophie.webp"
+            },
+            {
+                "name": "Hicham BOUHARB",
+                "description": "<strong>Directeur financier de groupe hospitalier</strong>",
+                "image": "images/equipe/hicham.webp"
+            },
+            {
+                "name": "Anne-Sophie SURLINA",
+                "description": "<strong>Assistante maternelle</strong>",
+                "image": "images/equipe/anne-sophie.webp"
+            },
+            {
+                "name": "Mathéo PEREIRA",
+                "description": "<strong>Etudiant en communication</strong>",
+                "image": "images/equipe/matheo.webp"
+            },
+            {
+                "name": "Nathalie MOREAU",
+                "description": "<strong>Cadre du privé</strong>",
+                "image": "images/equipe/nathalie.webp"
+            },
+            {
+                "name": "Vincent LANGARD",
+                "description": "<strong>Enseignant d'EPS</strong><br>Membre du comité départemental du Val d'Oise de badminton",
+                "image": "images/equipe/vincent.png"
+            }
+        ];
+
+        const teamGrid = document.getElementById('team-grid');
+
+        teamMembers.forEach(member => {
+            const memberCard = document.createElement('div');
+            // Revenir au style original "grande photo"
+            memberCard.className = "group bg-white rounded-xl shadow-sm hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 flex flex-col h-full";
+
+
+            // On fait confiance au HTML déjà formaté dans la description
+            let descriptionHTML = member.description;
+
+            // Juste pour le style de base, on enveloppe dans un span si ce n'est pas déjà fait ou complexe
+            // Mais ici on veut respecter le gras mis dans les data
+            // On ajoute juste une classe globale pour le texte courant
+
+            // On force le style du texte
+            descriptionHTML = `<div class="text-gray-700 text-sm leading-relaxed">${descriptionHTML}</div>`;
+
+            memberCard.innerHTML = `
+                <div class="relative w-full aspect-[369/492] overflow-hidden bg-gray-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+                    <img src="${member.image}" alt="${member.name}" class="w-full h-full object-cover object-top transform group-hover:scale-105 transition duration-700 ease-out" loading="lazy">
+                </div>
+                <div class="p-4 relative flex-grow flex flex-col items-center text-center">
+                    <!-- Brand Accent Line -->
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-plessis-purple to-plessis-orange"></div>
+                    
+                    <h3 class="font-heading text-lg font-bold text-gray-900 mb-1 group-hover:text-plessis-purple transition-colors">${member.name}</h3>
+                    <div class="flex-grow w-full">
+                        ${descriptionHTML}
+                    </div>
+                </div>
+            `;
+
+            teamGrid.appendChild(memberCard);
+        });
+    </script>
+
+
+    <script>
+        injectFooter();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Éducation et Jeunesse - Au Cœur Du Plessis</title>
+    <meta name="description"
+        content="Une offre éducative et périscolaire riche et accessible pour tous les enfants et jeunes.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'plessis-purple': '#7c3aed',
+                        'plessis-orange': '#f97316',
+                    },
+                    fontFamily: {
+                        'sans': ['Open Sans', 'sans-serif'],
+                        'heading': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, #7c3aed, #f97316);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #7c3aed, #f97316);
+        }
+
+        .program-item {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .program-circle {
+            flex-shrink: 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin-top: 6px;
+            background-color: #7c3aed;
+        }
+
+        .program-text {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #374151;
+        }
+
+        .program-text strong {
+            color: #1f2937;
+            font-weight: 600;
+        }
+    </style>
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <!-- Header & Footer Injection -->
+    <script src="js/components.js"></script>
+    <script>
+        injectHeader('programme');
+    </script>
+
+    <!-- HEADER -->
+    <header class="pt-32 pb-8 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <a href="programme.html"
+                class="inline-flex items-center text-plessis-purple font-bold mb-6 hover:text-plessis-orange transition">
+                <i class="ri-arrow-left-line mr-2"></i> Retour
+            </a>
+            <h1 class="text-4xl md:text-5xl font-heading font-bold text-gray-900">
+                Petite enfance, périscolaire et école
+            </h1>
+        </div>
+    </header>
+
+    <div class="py-12 bg-gradient-to-r from-yellow-50 to-yellow-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-lg md:text-xl text-gray-800 leading-relaxed space-y-4 max-w-3xl">
+                <p>
+                    Nous voulons garantir une offre éducative, périscolaire et petite enfance accessible à toutes les
+                    familles. Cela passe par des tarifs justes, des services bien organisés, des structures
+                    accueillantes et
+                    un accompagnement de qualité.<br><br>
+                    Nous renforcerons les activités proposées aux enfants, notamment aux
+                    tout-petits, et développerons un périscolaire plus varié et mieux adapté aux besoins des familles.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROGRAMME CONTENT -->
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <div class="mb-12">
+            <h2 class="text-2xl font-heading font-bold text-plessis-purple mb-6">Au cœur d'une offre périscolaire
+                accessible, diversifiée et dans l'ère du temps</h2>
+            <div class="grid md:grid-cols-2 gap-0 md:gap-12">
+                <div>
+                    <div class="program-item">
+                        <div class="program-circle"></div>
+                        <div class="program-text"><strong>Diminuer le coût de la restauration scolaire</strong> grâce à
+                            un barème de quotient familial plus progressif, et envisager une alternative à Sodexo à
+                            l'échéance du marché public en 2028.</div>
+                    </div>
+                    <div class="program-item">
+                        <div class="program-circle"></div>
+                        <div class="program-text"><strong>Rénover le centre de loisirs "les Mille Pattes"</strong> en
+                            rafraîchissant le matériel (chaises, tables, et autres) et les jeux à disposition des
+                            enfants.</div>
+                    </div>
+                    <div class="program-item">
+                        <div class="program-circle"></div>
+                        <div class="program-text"><strong>Proposer un planning d'activités périscolaire plus
+                                varié</strong> et mieux adapté aux besoins des enfants.</div>
+                    </div>
+                    <div class="program-item">
+                        <div class="program-circle"></div>
+                        <div class="program-text"><strong>Améliorer la diffusion d'informations</strong> entre la mairie
+                            et les parents d'élèves au sujet des plannings des centres de loisirs mais également aux
+                            dates importantes d'inscription des enfants.</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="program-item">
+                        <div class="program-circle"></div>
+                        <div class="program-text"><strong>Réaliser un plan de formation</strong> auprès de tout le
+                            personnel communal travaillant auprès des enfants : harçelement, violences sexuelles,
+                            handicap et gestion de crises.</div>
+                    </div>
+                    <div class="program-item">
+                        <div class="program-circle"></div>
+                        <div class="program-text"><strong>Renforcer la participation financière de la mairie</strong>
+                            aux activités qui font vivre les écoles : associations de parents d'élèves, kermesses,
+                            voyages et projets scolaires.</div>
+                    </div>
+                    <div class="program-item">
+                        <div class="program-circle"></div>
+                        <div class="program-text"><strong>Créer une commission canine,</strong> afin d'élaborer les
+                            menus des repas et des goûters en incluant les associations de parents d'élèves.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-12">
+            <h2 class="text-2xl font-heading font-bold text-plessis-orange mb-6">Au cœur de l'avenir : petite enfance &
+                école</h2>
+            <div class="grid md:grid-cols-2 gap-0 md:gap-12">
+                <div>
+                    <div class="program-item">
+                        <div class="program-circle" style="background-color: #f97316;"></div>
+                        <div class="program-text"><strong>Développer davantage d'animations</strong> destinées aux
+                            tout-petits, en créant des ateliers encadrés par des intervenants spécialisés, avec la
+                            possibilité de favoriser l'engagement de familles.</div>
+                    </div>
+                    <div class="program-item">
+                        <div class="program-circle" style="background-color: #f97316;"></div>
+                        <div class="program-text"><strong>Poursuivre l'implantation d'une crèche (20 à 30
+                                berceaux)</strong> Un Relais Petite Enfance à destination des assistantes maternelles et
+                            favoriser l'implantation de crèches privées.</div>
+                    </div>
+                    <div class="program-item">
+                        <div class="program-circle" style="background-color: #f97316;"></div>
+                        <div class="program-text"><strong>Permettre,</strong> sous réserve d'un accord du Val-Parisis,
+                            aux assistantes maternelles indépendantes de notre commune de fréquenter la médiathèque à
+                            des horaires spécifiques.</div>
+                    </div>
+                    <div class="program-item">
+                        <div class="program-circle" style="background-color: #f97316;"></div>
+                        <div class="program-text"><strong>Soutenir les familles</strong> dans la communication des
+                            places disponibles chez les assistantes maternelles du secteur.</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="program-item">
+                        <div class="program-circle" style="background-color: #f97316;"></div>
+                        <div class="program-text"><strong>Organiser une concertation globale</strong> à propos du projet
+                            de réhabilitation du collège Marcel Pagnol, des attentes concernant la carte scolaire :
+                            Communauté éducative et parents d'élèves.</div>
+                    </div>
+                    <div class="program-item">
+                        <div class="program-circle" style="background-color: #f97316;"></div>
+                        <div class="program-text"><strong>Élaborer un plan canicule concerté</strong> pour préparer nos
+                            écoles des débuts de notre mandat.</div>
+                    </div>
+                    <div class="program-item">
+                        <div class="program-circle" style="background-color: #f97316;"></div>
+                        <div class="program-text"><strong>S'associer avec les services de l'Éducation Nationale</strong>
+                            pour répondre aux besoins d'AESH dans les écoles.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer Injection -->
+    <script>
+        injectFooter();
+    </script>
+</body>
+
+</html>

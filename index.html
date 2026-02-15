@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lounes Lachgar - Au Cœur Du Plessis</title>
+    <meta name="description"
+        content="Site officiel de Lounes Lachgar. Préserver durablement notre cadre de vie, bâtir une ville adaptée à toutes les générations et garantir une commune sûre.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome (Removed) -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"> -->
+
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Configuration des couleurs -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'plessis-purple': '#7c3aed',
+                        'plessis-orange': '#f97316',
+                    },
+                    fontFamily: {
+                        'sans': ['Open Sans', 'sans-serif'],
+                        'heading': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, #7c3aed, #f97316);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #7c3aed, #f97316);
+        }
+
+        /* Style pour la Timeline verticale du programme */
+        .timeline-line {
+            position: absolute;
+            left: 15px;
+            top: 10px;
+            bottom: 0;
+            width: 4px;
+            background: #e5e7eb;
+            z-index: 0;
+        }
+    </style>
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Footer Injection -->
+    <script src="js/components.js"></script>
+    <script>
+        injectHeader('home');
+    </script>
+
+    <!-- HERO SECTION -->
+    <header class="relative pt-28 pb-12 lg:pt-36 lg:pb-24 overflow-hidden bg-white">
+        <div class="w-full mx-auto px-4 sm:px-6 lg:px-8 relative max-w-7xl">
+            <div class="grid lg:grid-cols-5 gap-12 items-center">
+
+                <!-- Texte d'accroche -->
+                <div class="order-1 lg:order-2 space-y-6 lg:col-span-3">
+                    <div
+                        class="inline-block px-4 py-1 rounded-full bg-purple-100 text-plessis-purple font-semibold text-sm tracking-wide uppercase mb-2">
+                        Élections Municipales 2026
+                    </div>
+                    <h1 class="text-4xl lg:text-6xl font-heading font-extrabold leading-tight text-gray-900">
+                        Un nouveau souffle pour<br><span class="gradient-text">Le Plessis-Bouchard</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 leading-relaxed font-medium">
+                        Liste issue d'un rassemblement citoyen aux <span class="font-bold">parcours et compétences
+                            variés</span>, nous sommes unis par une volonté commune : préserver et <span
+                            class="font-bold">améliorer notre qualité de vie</span>, avec <span
+                            class="font-bold">l'intérêt général</span> comme unique boussole.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="programme.html"
+                            class="text-center px-8 py-4 rounded-lg gradient-bg text-white font-bold text-lg shadow-lg hover:opacity-90 transition">
+                            Découvrir le programme
+                        </a>
+                        <a href="#bio"
+                            class="text-center px-8 py-4 rounded-lg border-2 border-gray-200 text-gray-700 font-bold text-lg hover:border-plessis-purple hover:text-plessis-purple transition">
+                            Notre équipe
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Photo du Candidat (RECTANGLE) -->
+                <div class="order-1 lg:order-2 relative flex justify-center lg:justify-end lg:col-span-2">
+                    <!-- Forme arrière plan floue -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-tr from-purple-200 to-orange-100 rounded-[3rem] blur-3xl opacity-60 transform translate-y-6 translate-x-6">
+                    </div>
+
+                    <!-- Cadre photo Rectangulaire -->
+                    <div
+                        class="relative w-full max-w-sm rounded-2xl p-1.5 gradient-bg shadow-2xl transform rotate-2 hover:rotate-0 transition duration-500 ease-out">
+                        <div class="bg-white rounded-xl overflow-hidden h-full relative">
+                            <img src="images/equipe/lounes.webp" alt="Lounes Lachgar"
+                                class="w-full h-auto object-contain">
+                            <div
+                                class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 pt-12">
+                                <p class="text-white font-heading font-bold text-xl">Lounes Lachgar</p>
+                                <p class="text-orange-300 text-sm font-semibold">Tête de liste "Au Cœur du Plessis"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- SUPPORTERS -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-center text-2xl font-heading font-bold text-gray-900 mb-3">Ils nous soutiennent</h2>
+            <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">Riche de sa diversité, notre liste unit des
+                citoyens de sensibilités variées, de la gauche à la droite modérée. Nous sommes soutenus par plusieurs
+                partis et personnalités locales.</p>
+
+            <!-- Logos des partis -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 items-center mb-8">
+                <img src="images/soutiens/ps.png" alt="Logo PS" class="mx-auto h-12 object-contain">
+                <img src="images/soutiens/en-commun.png" alt="Logo En Commun" class="mx-auto h-24 object-contain">
+                <img src="images/soutiens/renaissance.png" alt="Logo Renaissance" class="mx-auto h-8 object-contain">
+                <img src="images/soutiens/modem.png" alt="Logo MoDem" class="mx-auto h-12 object-contain">
+            </div>
+
+            <!-- Députés -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="flex items-center gap-4 bg-gray-50 p-4 rounded-lg shadow-sm">
+                    <img src="images/soutiens/emmanuel-maurel.png" alt="Député 1"
+                        class="w-20 h-20 rounded-full object-cover">
+                    <div>
+                        <p class="font-heading font-bold text-gray-900">Emmanuel Maurel</p>
+                        <p class="text-sm text-gray-600">Député de notre circonscription</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4 bg-gray-50 p-4 rounded-lg shadow-sm">
+                    <img src="images/soutiens/cecile-rilhac.png" alt="Député 2"
+                        class="w-20 h-20 rounded-full object-cover">
+                    <div>
+                        <p class="font-heading font-bold text-gray-900">Cécile Rilhac</p>
+                        <p class="text-sm text-gray-600">Ancienne Députée de notre circonscription (2017 - 2024)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION MANIFESTE / CONTEXTE (Mise à jour avec le texte du document) -->
+    <section id="bio" class="pt-20 pb-12 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Titre Section -->
+            <div class="text-center">
+                <span
+                    class="gradient-bg text-white px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wider">Notre
+                    engagement</span>
+                <h2 class="mt-4 text-3xl md:text-4xl font-heading font-bold text-gray-900">
+                    Le temps de l’écoute doit désormais conduire à celui de l’action
+                </h2>
+                <div class="h-1.5 w-24 gradient-bg mx-auto rounded-full mt-6"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANDEAU PRIORITÉS -->
+    <section class="bg-gray-50 py-8 border-y border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-gray-200">
+                <div class="p-4">
+                    <i class="ri-leaf-line text-plessis-purple text-4xl mb-3 block"></i>
+                    <p class="text-gray-900 font-bold text-lg">Préserver durablement notre cadre de vie</p>
+                </div>
+                <div class="p-4">
+                    <i class="ri-home-4-line text-plessis-orange text-4xl mb-3 block"></i>
+                    <p class="text-gray-900 font-bold text-lg">Bâtir une ville adaptée à toutes les générations</p>
+                </div>
+                <div class="p-4">
+                    <i class="ri-shield-check-line text-plessis-purple text-4xl mb-3 block"></i>
+                    <p class="text-gray-900 font-bold text-lg">Garantir une commune sûre, attractive et dynamique</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pb-20 pt-12 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Contenu Texte structuré comme une Timeline -->
+            <div class="relative md:pl-0 space-y-6">
+
+                <!-- Point 1 -->
+                <div class="relative flex flex-row gap-6">
+                    <div class="md:w-16 flex-shrink-0 flex flex-col items-center self-stretch">
+                        <div class="w-8 h-8 rounded-full border-4 border-purple-200 bg-plessis-purple z-10"></div>
+                        <div class="flex-1 w-1 bg-gray-100 my-2"></div>
+                    </div>
+                    <div class="pb-8">
+                        <h3 class="text-lg font-heading font-bold text-plessis-purple mb-2">Un cadre de vie à préserver,
+                            dans une ville rajeunissante
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed text-justify">
+                            <strong>Attachés à notre cadre de vie</strong>, nous avons le devoir de le préserver. Dans
+                            le même temps, notre commune connaît un rajeunissement de sa population : <strong>près de 40
+                                % des habitants ont moins de 30 ans</strong>. Face à cette évolution, nous devons
+                            proposer des services modernes, adaptés aux attentes d'aujourd'hui, tout <strong>en veillant
+                                à l'accompagnement de nos aînés</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Point 2 -->
+                <div class="relative flex flex-row gap-6">
+                    <div class="md:w-16 flex-shrink-0 flex flex-col items-center self-stretch">
+                        <div class="w-8 h-8 rounded-full border-4 border-orange-200 bg-plessis-orange z-10"></div>
+                        <div class="flex-1 w-1 bg-gray-100 my-2"></div>
+                    </div>
+                    <div class="pb-8">
+                        <h3 class="text-lg font-heading font-bold text-plessis-orange mb-2">Contexte financier</h3>
+                        <p class="text-gray-600 leading-relaxed text-justify">
+                            Notre ambition s'inscrit dans <strong>un contexte financier contraint</strong> : depuis
+                            2020, la dette communale a doublé, et les trois premières années de la future mandature
+                            seront marquées par d'importants remboursements. De ce fait, préserver notre capacité
+                            d'investissement suppose de maintenir un excédent de fonctionnement suffisant, pour financer
+                            nos projets <strong>sans alourdir la dette ni augmenter les impôts</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Point 3 -->
+                <div class="relative flex flex-row gap-6">
+                    <div class="md:w-16 flex-shrink-0 flex flex-col items-center self-stretch">
+                        <div class="w-8 h-8 rounded-full border-4 border-purple-200 bg-plessis-purple z-10"></div>
+                        <div class="flex-1 w-1 bg-gray-100 my-2"></div>
+                    </div>
+                    <div class="pb-8">
+                        <h3 class="text-lg font-heading font-bold text-plessis-purple mb-2">Gestion budgétaire</h3>
+                        <p class="text-gray-600 leading-relaxed text-justify">
+                            <strong>En matière d'investissement</strong>, nous concentrerons nos efforts sur la
+                            rénovation
+                            et l'optimisation des équipements publics. Avec quelques projets structurants, comme celui
+                            de
+                            la création d'un vrai service municipal de jeunesse. De plus, certaines mesures
+                            essentielles, comme le renforcement de la police municipale à cinq agents sont <strong>déjà
+                                inscrites au budget communal</strong> : il s'agit simplement de mettre en œuvre
+                            l'effectif prévu pour garantir une véritable police de proximité.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Point 6 -->
+                <div class="relative flex flex-row gap-6">
+                    <div class="md:w-16 flex-shrink-0 flex flex-col items-center self-stretch">
+                        <div class="w-8 h-8 rounded-full border-4 border-orange-200 bg-plessis-orange z-10"></div>
+                        <div class="flex-1 w-1 bg-gray-100 my-2"></div>
+                    </div>
+                    <div class="pb-8">
+                        <h3 class="text-lg font-heading font-bold text-plessis-orange mb-2">Notre ambition</h3>
+                        <p class="text-gray-600 leading-relaxed text-justify">
+                            Ce choix permet de concilier ambition, <strong>qualité du service public et responsabilité
+                                budgétaire</strong>, en mobilisant autant que possible des <strong>financements
+                                extérieurs</strong> (état, région, département, fond vert etc...) afin d'agir
+                            efficacement sans compromettre l'avenir financier du Plessis-Bouchard.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Point 7 Conclusion -->
+                <div class="relative flex flex-row gap-6">
+                    <div class="md:w-16 flex-shrink-0 flex flex-col items-center self-stretch">
+                        <div class="w-8 h-8 rounded-full bg-green-500 z-10 flex items-center justify-center text-white">
+                            <i class="ri-check-line"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-heading font-bold text-green-600 mb-2">Concertation et renouveau</h3>
+                        <p class="text-gray-600 leading-relaxed text-justify">
+                            Ce programme est le fruit d'une large concertation qui ne s'arrêtera pas à la campagne, nous
+                            poursuivrons notre méthode, en vous associant au plus près des décisions. Vous avez
+                            désormais le choix : <strong>l'immobilisme ou le renouveau</strong>.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="py-10 md:py-20 bg-gray-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-purple-900 to-gray-900 opacity-90"></div>
+        <div class="absolute inset-0 bg-center bg-no-repeat bg-cover md:bg-[position:center_calc(50%+132px)]"
+            style="background-image: url('images/equipe.webp'); mix-blend-mode: overlay;">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6">Vos retours comptent</h2>
+            <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+                Notre programme est construit à partir des avis des habitants. Vos retours continuent d’alimenter nos
+                priorités et nos décisions.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="contact.html"
+                    class="px-8 py-4 rounded-full bg-white text-purple-900 font-bold text-lg hover:bg-gray-100 transition shadow-lg">
+                    Nous contacter
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        injectFooter();
+    </script>
+</body>
+
+</html>

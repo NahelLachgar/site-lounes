@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeunesse, sport, lien social et culture - Au Cœur Du Plessis</title>
+    <meta name="description"
+        content="Sports, culture, lien social et événements pour une commune vivante et accueillante.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icon (Font Awesome Removed) -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'plessis-purple': '#7c3aed',
+                        'plessis-orange': '#f97316',
+                    },
+                    fontFamily: {
+                        'sans': ['Open Sans', 'sans-serif'],
+                        'heading': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, #7c3aed, #f97316);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #7c3aed, #f97316);
+        }
+
+        .program-item {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .program-circle {
+            flex-shrink: 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin-top: 6px;
+        }
+
+        .program-text {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #374151;
+        }
+
+        .program-text strong {
+            color: #1f2937;
+            font-weight: 600;
+        }
+    </style>
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <!-- Header & Footer Injection -->
+    <script src="js/components.js"></script>
+    <script>
+        injectHeader('programme');
+    </script>
+
+    <!-- HEADER -->
+    <header class="pt-32 pb-8 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <a href="programme.html"
+                class="inline-flex items-center text-plessis-purple font-bold mb-6 hover:text-plessis-orange transition">
+                <i class="ri-arrow-left-line mr-2"></i> Retour
+            </a>
+            <h1 class="text-4xl md:text-5xl font-heading font-bold text-gray-900">
+                Jeunesse, sport, lien social et culture
+            </h1>
+        </div>
+    </header>
+
+    <div class="py-12 bg-gradient-to-r from-red-50 to-red-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-lg md:text-xl text-gray-800 leading-relaxed space-y-4 max-w-3xl">
+                <p>
+                    Chaque génération doit trouver sa place dans la ville. Nous proposerons des activités partagées, des
+                    moments de rencontre et une vraie dynamique d’échanges entre jeunes et aînés.<br><br>La culture, le
+                    sport
+                    et les loisirs seront au cœur de cette ambition, avec des infrastructures modernisées et des
+                    programmes accessibles à tous, pour encourager le bien-être et le lien social.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROGRAMME CONTENT -->
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <div class="grid md:grid-cols-2 gap-0 md:gap-12 mb-12">
+            <div>
+                <h3 class="text-2xl font-bold text-plessis-purple mb-6">Jeunesse</h3>
+                <div class="program-item">
+                    <div class="program-circle" style="background-color: #7c3aed;"></div>
+                    <div class="program-text"><strong>Créer une véritable Maison de la Jeunesse,</strong> élargir les
+                        horaires d'accueil, proposer des activités pédagogiques, culturelles et augmenter son budget.
+                    </div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle" style="background-color: #7c3aed;"></div>
+                    <div class="program-text"><strong>Renforcer et promouvoir la permanence de la mission
+                            locale</strong> pour accompagner les jeunes vers l'emploi.</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle" style="background-color: #7c3aed;"></div>
+                    <div class="program-text"><strong>Développer une rubrique « Jobs jeunes »</strong> pour l'emploi
+                        étudiant local dans l'application municipale (emploi local et stages). Voir partie salariés.
+                    </div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle" style="background-color: #7c3aed;"></div>
+                    <div class="program-text"><strong>Élargir les compétences du CMJ</strong> avec une réelle prise en
+                        compte de leurs délibérations.</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle" style="background-color: #7c3aed;"></div>
+                    <div class="program-text"><strong>Favoriser l'emploi des personnes en situation de handicap
+                            :</strong> synergie des entreprises du Plessis-Bouchard et de la mairie pour l'accueil de
+                        jeunes stagiaires du dispositif ULiS du collège.</div>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold text-plessis-orange mb-6">Sport</h3>
+                <div class="program-item">
+                    <div class="program-circle" style="background-color: #f97316;"></div>
+                    <div class="program-text"><strong>Optimiser les créneaux</strong> d'occupation des structures par
+                        les associations sportives dans les gymnases et favoriser les rencontres de championnats
+                        notamment le week-end au gymnase Marie Marvingdt.</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle" style="background-color: #f97316;"></div>
+                    <div class="program-text"><strong>Étudier un projet de rénovation du gymnase A. Guillaume</strong>
+                        notamment par l'emploi de subventions régionales.</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle" style="background-color: #f97316;"></div>
+                    <div class="program-text"><strong>Créer un club de basket-ball.</strong></div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle" style="background-color: #f97316;"></div>
+                    <div class="program-text"><strong>Organiser une Fête des Sports</strong> et promouvoir les
+                        événements handisport.</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle" style="background-color: #f97316;"></div>
+                    <div class="program-text"><strong>Construire un espace extérieur de renforcement musculaire</strong>
+                        intergénérationnel (parcours de santé).</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle" style="background-color: #f97316;"></div>
+                    <div class="program-text"><strong>Organiser une concertation sur l'avenir du terrain
+                            d'étais</strong> (en face du cimetière).</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle" style="background-color: #f97316;"></div>
+                    <div class="program-text"><strong>Permettre aux Plessis-Boucardiens les mise à disposition de
+                            créneaux</strong> afin de jouer sur le terrain de football utilisé par la GAFEP, de façon
+                        encadrée, avec une cotisation accompagnée de la signature d'une charte de respect des lieux.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-12">
+            <h3 class="text-2xl font-bold text-plessis-purple mb-6">Lien social et culture</h3>
+            <div class="grid md:grid-cols-2 gap-0 md:gap-12">
+                <div>
+                    <div class="program-item">
+                        <div class="program-circle" style="background-color: #7c3aed;"></div>
+                        <div class="program-text"><strong>Faire évoluer la classification</strong> du gymnase Marie
+                            Marvingt
+                            afin d'élargir son champ de compétences et créer des événements porteurs de liens sociaux
+                            (forum
+                            des associations, lotos, soirées dansantes...)</div>
+                    </div>
+                    <div class="program-item">
+                        <div class="program-circle" style="background-color: #7c3aed;"></div>
+                        <div class="program-text"><strong>Créer une véritable "saison culturelle" :</strong> proposer
+                            toute
+                            l'année une programmation culturelle variée et accessible : théâtre, musique, arts visuels,
+                            expositions et spectacles pour tous les publics.</div>
+                    </div>
+                    <div class="program-item">
+                        <div class="program-circle" style="background-color: #7c3aed;"></div>
+                        <div class="program-text"><strong>Réinvestir le parc Yves Carric :</strong> cinéma en plein air,
+                            bal
+                            du village.</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="program-item">
+                        <div class="program-circle" style="background-color: #7c3aed;"></div>
+                        <div class="program-text"><strong>Réunir les acteurs associatifs</strong> lors d'un événement
+                            convivial de fin d'année. Promouvoir les activités d'été pour les jeunes qui ne partent pas
+                            en
+                            vacances : interventions associatives, jeux de plein air.</div>
+                    </div>
+                    <div class="program-item">
+                        <div class="program-circle" style="background-color: #7c3aed;"></div>
+                        <div class="program-text"><strong>Mettre en place une rentrée scolaire en musique</strong> en
+                            lien
+                            avec l'EMAM. Promouvoir les talents des Plessis-Boucardiens par divers événements publics :
+                            éloquence, chants, musique, peinture, arts créatifs.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer Injection -->
+    <script>
+        injectFooter();
+    </script>
+</body>
+
+</html>

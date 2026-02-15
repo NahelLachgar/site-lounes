@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Lounes Lachgar 2026</title>
+    <meta name="description"
+        content="Contactez l'équipe de Lounes Lachgar. Posez vos questions, partagez vos idées ou rejoignez le mouvement pour Le Plessis-Bouchard.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome (Removed in favor of Remix Icon) -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"> -->
+
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Configuration des couleurs -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'plessis-purple': '#7c3aed',
+                        'plessis-orange': '#f97316',
+                    },
+                    fontFamily: {
+                        'sans': ['Open Sans', 'sans-serif'],
+                        'heading': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, #7c3aed, #f97316);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #7c3aed, #f97316);
+        }
+    </style>
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Header & Footer Injection -->
+    <script src="js/components.js"></script>
+    <script>
+        injectHeader('contact');
+    </script>
+
+    <!-- HEADER TITLE -->
+    <header class="pt-32 pb-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div
+                class="inline-block px-4 py-1 rounded-full bg-purple-100 text-plessis-purple font-semibold text-sm tracking-wide uppercase mb-4">
+                À votre écoute
+            </div>
+            <h1 class="text-4xl md:text-5xl font-heading font-extrabold text-gray-900 mb-6">
+                Contactez <span class="gradient-text">notre équipe</span>
+            </h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                Vous avez une question, ou une proposition ? N'hésitez pas à nous envoyer un email ou nous contacter sur
+                les réseaux sociaux.
+            </p>
+        </div>
+    </header>
+
+    <!-- CONTENT SECTION -->
+    <section class="flex-grow pb-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Informations -->
+            <div class="bg-gray-50 rounded-2xl p-8 shadow-sm">
+                <h3 class="text-2xl font-heading font-bold text-gray-900 mb-8 text-center">Nos coordonnées</h3>
+
+                <div class="space-y-8 max-w-lg mx-auto">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 w-12 text-center">
+                            <i class="ri-mail-line text-plessis-purple text-3xl"></i>
+                        </div>
+                        <div class="ml-6">
+                            <p class="text-base font-bold text-gray-900">Email</p>
+                            <a href="mailto:aucoeurduplessis@gmail.com"
+                                class="text-gray-600 hover:text-plessis-purple transition text-lg">aucoeurduplessis@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 w-12 flex justify-center">
+                            <img src="images/facebook.png" alt="Facebook" class="w-8 h-8">
+                        </div>
+                        <div class="ml-6">
+                            <p class="text-base font-bold text-gray-900">Facebook</p>
+                            <a href="https://www.facebook.com/profile.php?id=61572997027975" target="_blank"
+                                class="text-gray-600 hover:text-plessis-purple transition text-lg">Au Cœur du
+                                Plessis</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 w-12 flex justify-center">
+                            <img src="images/instagram.png" alt="Instagram" class="w-8 h-8">
+                        </div>
+                        <div class="ml-6">
+                            <p class="text-base font-bold text-gray-900">Instagram</p>
+                            <a href="https://www.instagram.com/aucoeurduplessis" target="_blank"
+                                class="text-gray-600 hover:text-plessis-purple transition text-lg">aucœurduplessis</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 p-8 bg-white rounded-xl border border-gray-100 shadow-sm text-center">
+                    <div
+                        class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-purple-100 text-plessis-purple mb-4">
+                        <i class="ri-user-voice-line text-3xl"></i>
+                    </div>
+                    <h4 class="font-bold text-xl mb-3 text-gray-900">Besoin d'aide pour voter par procuration ?</h4>
+                    <p class="text-gray-600 text-base leading-relaxed mb-6 max-w-2xl mx-auto">
+                        Si vous ne pouvez pas vous déplacer le jour du vote, nous pouvons vous accompagner dans les
+                        démarches pour établir une procuration.
+                    </p>
+                    <p class="font-bold text-gray-900">
+                        Écrivez-nous à <a href="mailto:aucoeurduplessis@gmail.com"
+                            class="text-plessis-purple hover:underline">aucoeurduplessis@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        injectFooter();
+    </script>
+</body>
+
+</html>

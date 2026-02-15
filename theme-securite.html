@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sécurité - Au Cœur Du Plessis</title>
+    <meta name="description"
+        content="Une vraie police de proximité et des mesures concrètes de sécurité pour le Plessis-Bouchard.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'plessis-purple': '#7c3aed',
+                        'plessis-orange': '#f97316',
+                    },
+                    fontFamily: {
+                        'sans': ['Open Sans', 'sans-serif'],
+                        'heading': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, #7c3aed, #f97316);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #7c3aed, #f97316);
+        }
+
+        .program-item {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .program-circle {
+            flex-shrink: 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin-top: 6px;
+            background-color: #f97316;
+        }
+
+        .program-text {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #374151;
+        }
+
+        .program-text strong {
+            color: #1f2937;
+            font-weight: 600;
+        }
+    </style>
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <!-- Header & Footer Injection -->
+    <script src="js/components.js"></script>
+    <script>
+        injectHeader('programme');
+    </script>
+
+    <!-- HEADER -->
+    <header class="pt-32 pb-8 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <a href="programme.html"
+                class="inline-flex items-center text-plessis-purple font-bold mb-6 hover:text-plessis-orange transition">
+                <i class="ri-arrow-left-line mr-2"></i> Retour
+            </a>
+            <h1 class="text-4xl md:text-5xl font-heading font-bold text-gray-900">
+                Sécurité
+            </h1>
+        </div>
+    </header>
+
+    <div class="py-12 bg-gradient-to-r from-blue-50 to-blue-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-lg md:text-xl text-gray-800 leading-relaxed space-y-4 max-w-3xl">
+                <p>
+                    Garantir la sécurité de toutes et tous, dans l’espace public comme aux abords des écoles, est une
+                    mission essentielle pour une commune.<br>La tranquillité ne se décrète pas : elle se construit, avec
+                    des
+                    moyens adaptés, une présence humaine visible et une approche fondée à la fois sur la prévention, la
+                    proximité et la fermeté quand elle s’impose.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROGRAMME CONTENT -->
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <div class="grid md:grid-cols-2 gap-0 md:gap-12 mb-12">
+            <div>
+                <div class="program-item">
+                    <div class="program-circle"></div>
+                    <div class="program-text"><strong>Renforcer les effectifs de la police municipale (5
+                            agents),</strong> en élargissant les horaires d'intervention jusqu'à minuit et en
+                        poursuivant le partenariat avec la police nationale pour la nuit.</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle"></div>
+                    <div class="program-text"><strong>Déployer une présence policière mobile</strong> aux heures
+                        sensibles, près des écoles et au parc Yves Carric, en journée et en soirée, afin de prévenir les
+                        nuisances et <strong>former les agents à l'environnement.</strong></div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle"></div>
+                    <div class="program-text"><strong>Renforcer et étendre notre parc de caméras</strong> relié au
+                        centre de supervision urbain et soutenir les initiatives du Val Paris en matière de
+                        vidéoverbalisation et de vidéoprotection urbaine.</div>
+                </div>
+            </div>
+            <div>
+                <div class="program-item">
+                    <div class="program-circle"></div>
+                    <div class="program-text"><strong>Lutter efficacement contre les dépôts sauvages d'ordures</strong>
+                        avec des actions de pédagogie (campagne de sensibilisation) mais aussi par le renforcement de
+                        l'expression.</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle"></div>
+                    <div class="program-text"><strong>Sécuriser durablement la rue Alexopoulos,</strong> afin de
+                        garantir des entrées et sorties d'écoles apaisées, par l'installation concertée avec les maires.
+                        Un poteau escamotable faciliterait l'intervention de la police municipale.</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle"></div>
+                    <div class="program-text"><strong>Mener une politique active d'apaisement</strong> de la
+                        circulation, en maintenant la zone 30 sur l'ensemble de la ville et en dotant la police
+                        municipale d'un cinémomètre à des fins pédagogiques, puis répressives si nécessaire.</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer Injection -->
+    <script>
+        injectFooter();
+    </script>
+</body>
+
+</html>

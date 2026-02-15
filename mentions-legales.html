@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentions Légales - Au Cœur du Plessis</title>
+    <meta name="description" content="Mentions légales du site de campagne Au Cœur Du Plessis.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'plessis-purple': '#7c3aed',
+                        'plessis-orange': '#f97316',
+                    },
+                    fontFamily: {
+                        'sans': ['Open Sans', 'sans-serif'],
+                        'heading': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, #7c3aed, #f97316);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #7c3aed, #f97316);
+        }
+    </style>
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Header & Footer Injection -->
+    <script src="js/components.js"></script>
+    <script>
+        injectHeader();
+    </script>
+
+    <!-- HEADER -->
+    <header class="pt-32 pb-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-6">
+                Mentions Légales
+            </h1>
+        </div>
+    </header>
+
+    <!-- CONTENU -->
+    <section class="py-12 bg-white flex-grow">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            
+            <div>
+                <h2 class="text-2xl font-heading font-bold text-plessis-purple mb-4">Éditeur du site</h2>
+                <p class="mb-2"><strong>Nom de la liste :</strong> Au Cœur Du Plessis</p>
+                <p class="mb-2"><strong>Directeur de la publication :</strong> Lounes Lachgar</p>
+                <p class="mb-2"><strong>Contact :</strong> <a href="mailto:aucoeurduplessis@gmail.com" class="text-plessis-orange hover:underline">aucoeurduplessis@gmail.com</a></p>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-heading font-bold text-plessis-purple mb-4">Hébergement</h2>
+                <p class="mb-2">Ce site est hébergé par Firebase Hosting (Google LLC).</p>
+                <p>Siège social : 1600 Amphitheatre Parkway, Mountain View, California 94043, USA.</p>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-heading font-bold text-plessis-purple mb-4">Propriété intellectuelle</h2>
+                <p>
+                    L’ensemble des contenus (textes, images, vidéos) présents sur ce site est la propriété exclusive de la liste "Au Cœur Du Plessis", sauf mention contraire. Toute reproduction, distribution ou modification sans autorisation préalable est interdite.
+                </p>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-heading font-bold text-plessis-purple mb-4">Données personnelles</h2>
+                <p class="mb-4">
+                    Les informations recueillies via le formulaire de contact sont destinées uniquement à l’équipe de campagne pour répondre à vos demandes. Elles ne seront en aucun cas cédées à des tiers.
+                </p>
+                <p class="mb-4">
+                    Conformément à la loi "Informatique et Libertés" et au RGPD, vous disposez d’un droit d’accès, de rectification et de suppression de vos données. Pour exercer ce droit, contactez-nous par email.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        injectFooter();
+    </script>
+</body>
+
+</html>

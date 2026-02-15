@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urbanisme, environnement et logement - Au Cœur Du Plessis</title>
+    <meta name="description"
+        content="Découvrez nos engagements pour préserver et améliorer le cadre de vie du Plessis-Bouchard.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icon (Font Awesome Removed) -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'plessis-purple': '#7c3aed',
+                        'plessis-orange': '#f97316',
+                    },
+                    fontFamily: {
+                        'sans': ['Open Sans', 'sans-serif'],
+                        'heading': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, #7c3aed, #f97316);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #7c3aed, #f97316);
+        }
+
+        .program-item {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .program-circle {
+            flex-shrink: 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin-top: 6px;
+            background-color: #7c3aed;
+        }
+
+        .program-text {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #374151;
+        }
+
+        .program-text strong {
+            color: #1f2937;
+            font-weight: 600;
+        }
+    </style>
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <!-- Header & Footer Injection -->
+    <script src="js/components.js"></script>
+    <script>
+        injectHeader('programme');
+    </script>
+
+    <!-- HEADER -->
+    <header class="pt-32 pb-8 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <a href="programme.html"
+                class="inline-flex items-center text-plessis-purple font-bold mb-6 hover:text-plessis-orange transition">
+                <i class="ri-arrow-left-line mr-2"></i> Retour
+            </a>
+            <h1 class="text-4xl md:text-5xl font-heading font-bold text-gray-900">
+                Urbanisme, environnement et logement
+            </h1>
+        </div>
+    </header>
+
+    <div class="py-12 bg-gradient-to-r from-green-50 to-green-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-lg md:text-xl text-gray-800 leading-relaxed space-y-4 max-w-3xl">
+                <p>
+                    Depuis plusieurs années, notre commune subit une bétonisation progressive. Cette dynamique, menée
+                    sans réelle vision d'ensemble, fragilise notre qualité de vie.
+                </p>
+                <p>
+                    Nous souhaitons préserver l'identité de notre ville en protégeant ses espaces de respiration, en
+                    favorisant la biodiversité et en associant les habitantes et les habitants aux choix d’aménagement.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROGRAMME CONTENT -->
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <div class="grid md:grid-cols-2 gap-0 md:gap-12 mb-12">
+            <div>
+                <div class="program-item">
+                    <div class="program-circle"></div>
+                    <div class="program-text"><strong>Développer progressivement le nombre d'espaces verts sur la
+                            commune :</strong> cours d'école, zones ombragées dans les espaces publics.</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle"></div>
+                    <div class="program-text"><strong>Renforcer les solutions de gestion des déchets,</strong> en
+                        installant un composteur collectif au parc Yves Carric, en développant d'autres points de
+                        compostage avec des référents et en déployant davantage de bornes entrées.</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle"></div>
+                    <div class="program-text"><strong>Encourager la pratique du vélo,</strong> en créant des pistes
+                        cyclables adaptées aux usages, notamment vers les écoles et la gare, en renforçant le
+                        stationnement vélo à proximité des équipements publics et des commerces et en développant des
+                        ateliers de réparation dans les écoles.</div>
+                </div>
+            </div>
+            <div>
+                <div class="program-item">
+                    <div class="program-circle"></div>
+                    <div class="program-text"><strong>Rafraîchir et moderniser le parc Yves Carric :</strong> aires de
+                        jeux, tables de pique-nique, bancs.</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle"></div>
+                    <div class="program-text"><strong>Veiller au bon entretien du cimetière.</strong></div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle"></div>
+                    <div class="program-text"><strong>Créer un caniparc,</strong> afin d'offrir un espace adapté au
+                        bien-être des chiens tout en limitant les déjections canines sur l'espace public.</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        injectFooter();
+    </script>
+</body>
+
+</html>

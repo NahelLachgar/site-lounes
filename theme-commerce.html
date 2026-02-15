@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commerce, démocratie locale et agents municipaux - Au Cœur Du Plessis</title>
+    <meta name="description"
+        content="Soutenir nos commerçants locaux et dynamiser les espaces commerciaux du Plessis-Bouchard.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icon (Font Awesome Removed) -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'plessis-purple': '#7c3aed',
+                        'plessis-orange': '#f97316',
+                    },
+                    fontFamily: {
+                        'sans': ['Open Sans', 'sans-serif'],
+                        'heading': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, #7c3aed, #f97316);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #7c3aed, #f97316);
+        }
+
+        .program-item {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .program-circle {
+            flex-shrink: 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin-top: 6px;
+            background-color: #7c3aed;
+        }
+
+        .program-text {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #374151;
+        }
+
+        .program-text strong {
+            color: #1f2937;
+            font-weight: 600;
+        }
+    </style>
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <!-- Header & Footer Injection -->
+    <script src="js/components.js"></script>
+    <script>
+        injectHeader('programme');
+    </script>
+
+    <!-- HEADER -->
+    <header class="pt-32 pb-8 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <a href="programme.html"
+                class="inline-flex items-center text-plessis-purple font-bold mb-6 hover:text-plessis-orange transition">
+                <i class="ri-arrow-left-line mr-2"></i> Retour
+            </a>
+            <h1 class="text-4xl md:text-5xl font-heading font-bold text-gray-900">
+                Commerce, démocratie locale et agents municipaux
+            </h1>
+        </div>
+    </header>
+
+    <div class="py-12 bg-gradient-to-r from-indigo-50 to-indigo-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-lg md:text-xl text-gray-800 leading-relaxed space-y-4 max-w-3xl">
+                <p>
+                    Nous voulons redonner vie aux espaces de proximité, en particulier au centre commercial des Hauts de
+                    Saint-Nicolas, aujourd’hui sous-fréquenté. À l’échelle de la commune, il est essentiel de soutenir
+                    les
+                    commerces existants, d’en faciliter l’implantation, et de renforcer leur visibilité.<br><br>En
+                    parallèle, nous
+                    souhaitons encourager une démocratie locale plus vivante, avec des habitants mieux associés aux
+                    décisions, et une mairie à l’écoute, modernisée dans son fonctionnement. Parce qu’une ville
+                    dynamique
+                    repose aussi sur la qualité de ses services publics et le lien entre ses acteurs.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROGRAMME CONTENT -->
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <div class="grid md:grid-cols-2 gap-0 md:gap-12 mb-12">
+            <div>
+                <div class="program-item">
+                    <div class="program-circle"></div>
+                    <div class="program-text"><strong>Proposer à la copropriété des Hauts de Saint-Nicolas la création
+                            d'une dite de jeux</strong> au cœur du centre commercial : encourager la fréquentation des
+                        commerces à la suite de la création de la nouvelle école.</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle"></div>
+                    <div class="program-text"><strong>Fluidifier le stationnement sur le parking des Hauts de
+                            Saint-Nicolas</strong> par des contrôles plus réguliers : opérer une réflexion globale du
+                        plan de stationnement.</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle"></div>
+                    <div class="program-text"><strong>Créer un véritable parcours de signalétique</strong> afin de
+                        renforcer la visibilité des commerces de proximité.</div>
+                </div>
+            </div>
+            <div>
+                <div class="program-item">
+                    <div class="program-circle"></div>
+                    <div class="program-text"><strong>Accompagner l'implantation de commerces de proximité étroite et de
+                            qualité</strong> dans toute la ville.</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle"></div>
+                    <div class="program-text"><strong>Favoriser l'implantation de l'installation d'un lieu de
+                            convivialité</strong> (salon de thé, bar à jeux).</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle"></div>
+                    <div class="program-text"><strong>Encourager la création d'une association des commerçants du
+                            marché,</strong> renforcer la communication autour du marché et de ses commerçants.</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle"></div>
+                    <div class="program-text"><strong>Permettre la création d'une association pour les
+                            entrepreneurs</strong> du Plessis-Bouchard : favoriser le développement d'un réseau
+                        professionnel.</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle"></div>
+                    <div class="program-text"><strong>Prioriser les entreprises du Plessis-Bouchard</strong> pour
+                        l'organisation des événements de la ville.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-0 md:gap-12 mb-12 mt-16">
+            <div>
+                <h3 class="text-2xl font-bold text-plessis-purple mb-6">Démocratie locale</h3>
+                <div class="program-item">
+                    <div class="program-circle" style="background-color: #7c3aed;"></div>
+                    <div class="program-text"><strong>Organiser des consultations citoyennes :</strong> réunions
+                        publiques, référendums locaux, ateliers participatifs pour les grands projets.</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle" style="background-color: #7c3aed;"></div>
+                    <div class="program-text"><strong>Revitaliser les conseils de quartiers :</strong> meilleure prise
+                        en compte des propositions émises et accentuer la fréquence des réunions.</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle" style="background-color: #7c3aed;"></div>
+                    <div class="program-text"><strong>Promouvoir les initiatives des habitants</strong> par la création
+                        de concours de projets participatifs.</div>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold text-plessis-orange mb-6">Agents municipaux</h3>
+                <div class="program-item">
+                    <div class="program-circle" style="background-color: #f97316;"></div>
+                    <div class="program-text"><strong>Organiser une consultation</strong> dès le début du mandat avec
+                        chaque service municipal et en assurer le suivi.</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle" style="background-color: #f97316;"></div>
+                    <div class="program-text"><strong>Réfléchir à l'adaptation des conditions de travail pour les
+                            femmes</strong> (périodes menstruelles délicates, endométriose).</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle" style="background-color: #f97316;"></div>
+                    <div class="program-text"><strong>Permettre le télétravail</strong> aux agents municipaux lorsque
+                        l'organisation des services le permet.</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle" style="background-color: #f97316;"></div>
+                    <div class="program-text"><strong>Engager l'Administration</strong> dans une Mouvement de réduction
+                        de son empreinte carbone.</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle" style="background-color: #f97316;"></div>
+                    <div class="program-text"><strong>Créer des liens entre les services municipaux</strong> par le
+                        biais d'événements favorisant la cohésion et le bien-être au travail.</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        injectFooter();
+    </script>
+</body>
+
+</html>

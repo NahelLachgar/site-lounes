@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seniors, solidarité et santé - Au Cœur Du Plessis</title>
+    <meta name="description" content="Une commune solidaire, où tous les âges trouvent leur place et leur soutien.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'plessis-purple': '#7c3aed',
+                        'plessis-orange': '#f97316',
+                    },
+                    fontFamily: {
+                        'sans': ['Open Sans', 'sans-serif'],
+                        'heading': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, #7c3aed, #f97316);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #7c3aed, #f97316);
+        }
+
+        .program-item {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .program-circle {
+            flex-shrink: 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin-top: 6px;
+        }
+
+        .program-text {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #374151;
+        }
+
+        .program-text strong {
+            color: #1f2937;
+            font-weight: 600;
+        }
+    </style>
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <!-- Header & Footer Injection -->
+    <script src="js/components.js"></script>
+    <script>
+        injectHeader('programme');
+    </script>
+
+    <!-- HEADER -->
+    <header class="pt-32 pb-8 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <a href="programme.html"
+                class="inline-flex items-center text-plessis-purple font-bold mb-6 hover:text-plessis-orange transition">
+                <i class="ri-arrow-left-line mr-2"></i> Retour
+            </a>
+            <h1 class="text-4xl md:text-5xl font-heading font-bold text-gray-900">
+                Seniors, solidarité et santé
+            </h1>
+        </div>
+    </header>
+
+    <div class="py-12 bg-gradient-to-r from-pink-50 to-pink-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-lg md:text-xl text-gray-800 leading-relaxed space-y-4 max-w-3xl">
+                <p>
+                    Nous voulons garantir à chaque habitant un accompagnement adapté à chaque étape de la vie. Cela
+                    passe
+                    par une politique claire en faveur des seniors, avec un meilleur suivi, un accès facilité aux droits
+                    et
+                    un soutien aux associations locales.<br><br>
+                    Nous renforcerons également les dispositifs de solidarité pour les
+                    publics vulnérables, en améliorant l’accès aux services, aux aides et aux professionnels. Enfin,
+                    nous
+                    structurerons une politique de santé de proximité, en lien avec les acteurs locaux, pour mieux
+                    répondre
+                    aux besoins du quotidien.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROGRAMME CONTENT -->
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <div class="grid md:grid-cols-2 gap-0 md:gap-12 mb-12">
+            <div>
+                <h3 class="text-2xl font-bold text-plessis-purple mb-6">Seniors</h3>
+                <div class="program-item">
+                    <div class="program-circle" style="background-color: #7c3aed;"></div>
+                    <div class="program-text"><strong>Rattacher la politique en faveur des seniors à une
+                            délégation</strong> dédiée du conseil municipal, pour identifier les bénéficiaires de
+                        services à domicile afin de mettre en place un suivi personnalisé.</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle" style="background-color: #7c3aed;"></div>
+                    <div class="program-text"><strong>Accompagner les initiatives associatives intercommunales</strong>
+                        du Val Paris : mise à disposition de locaux et maintien des subventions à la "Retraite Sportive
+                        du Paris".</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle" style="background-color: #7c3aed;"></div>
+                    <div class="program-text"><strong>Améliorer la réception des dossiers administratifs</strong> des
+                        seniors (dématérialisation et livraison).</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle" style="background-color: #7c3aed;"></div>
+                    <div class="program-text"><strong>Fournir un guide papier</strong> aux seniors concernant leurs
+                        droits et activités accessibles.</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle" style="background-color: #7c3aed;"></div>
+                    <div class="program-text"><strong>Encourager les rencontres</strong> entre les écoles et les
+                        personnes âgées : résidence du Grand Clos et initiatives locales.</div>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold text-plessis-orange mb-6">Solidarité</h3>
+                <div class="program-item">
+                    <div class="program-circle" style="background-color: #f97316;"></div>
+                    <div class="program-text"><strong>Créer une plateforme numérique de solidarité
+                            intergénérationnelle,</strong> inspirée d'« AllO Voisin », intégrant le covoiturage
+                        solidaire pour les personnes âgées ou à mobilité réduite, une rubrique dédiée aux conseils
+                        domestiques, la mise en relation avec les infirmiers à domicile, ainsi qu'une solution de
+                        colocation intergénérationnelle.</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle" style="background-color: #f97316;"></div>
+                    <div class="program-text"><strong>Mettre à disposition une permanence</strong> en mairie pour
+                        accompagner les Plessis-Boucardiens dans leurs Mouvements administratives.</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle" style="background-color: #f97316;"></div>
+                    <div class="program-text"><strong>Garantir plus de souplesse pour les familles
+                            monoparentales</strong> concernant le périscolaire.</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle" style="background-color: #f97316;"></div>
+                    <div class="program-text"><strong>Permettre une permanence d'associations et de
+                            professionnels</strong> (psychologue, aide juridique, cellule d'écoute) d'écoute des
+                        personnes vulnérables, notamment dans le cadre de la lutte contre les violences intrafamiliales.
+                    </div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle" style="background-color: #f97316;"></div>
+                    <div class="program-text"><strong>Rattacher à une délégation,</strong> la lutte contre les violences
+                        sexistes et sexuelles.</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-circle" style="background-color: #f97316;"></div>
+                    <div class="program-text"><strong>Organiser,</strong> sur le modèle de la "Semaine Bleue" une
+                        semaine de la santé mentale et du handicap.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-12">
+            <h3 class="text-2xl font-bold text-plessis-purple mb-6">Santé</h3>
+            <div class="grid md:grid-cols-2 gap-0 md:gap-12">
+                <div>
+                    <div class="program-item">
+                        <div class="program-circle" style="background-color: #7c3aed;"></div>
+                        <div class="program-text"><strong>Rattacher la santé à une délégation</strong> du conseil
+                            municipal
+                            et organiser, dès le début du mandat, une commission réunissant les professionnels locaux et
+                            les
+                            partenaires sociaux afin de déterminer les besoins des habitants.</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="program-item">
+                        <div class="program-circle" style="background-color: #7c3aed;"></div>
+                        <div class="program-text"><strong>Poursuivre l'implantation d'une maison de santé</strong>
+                            permettant d'accueillir 4 à 5 praticiens via le projet "les Terrasses de Grangeret".</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer Injection -->
+    <script>
+        injectFooter();
+    </script>
+</body>
+
+</html>

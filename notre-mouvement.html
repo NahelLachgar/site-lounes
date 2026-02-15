@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Mouvement - Au Cœur Du Plessis</title>
+    <meta name="description"
+        content="Découvrez notre mouvement citoyen pour le Plessis-Bouchard. Une liste diverse, engagée et proche des habitants.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icon (Font Awesome Removed) -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'plessis-purple': '#7c3aed',
+                        'plessis-orange': '#f97316',
+                    },
+                    fontFamily: {
+                        'sans': ['Open Sans', 'sans-serif'],
+                        'heading': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, #7c3aed, #f97316);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #7c3aed, #f97316);
+        }
+    </style>
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <!-- Header & Footer Injection -->
+    <script src="js/components.js"></script>
+    <script>
+        injectHeader('mouvement');
+    </script>
+
+    <!-- HEADER -->
+    <header class="pt-32 pb-12 bg-gradient-to-r from-purple-50 to-orange-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-4">
+                Notre Mouvement
+            </h1>
+            <p class="text-xl text-gray-600">
+                Une aventure citoyenne, diverse et engagée pour le Plessis-Bouchard
+            </p>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+        <!-- Section 1: L'origine du mouvement -->
+        <section class="mb-16">
+            <div class="grid md:grid-cols-2 gap-8 items-start">
+                <div>
+                    <h2 class="text-3xl font-heading font-bold text-plessis-purple mb-6">L'origine de notre aventure
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        Depuis le mois de février, avec le lancement de l'aventure Au coeur du Plessis, nous sommes
+                        allés au plus près de vous. Nous avons pris le temps de discuter avec les habitants, les acteurs
+                        associatifs, les commerçants, partout où la vie du Plessis se fait au quotidien. Ces échanges
+                        directs, simples et sincères ont nourri notre réflexion et fait émerger des priorités claires
+                        pour l'avenir de notre commune.
+                    </p>
+                </div>
+                <div>
+                    <img src="images/mouvement/mouvement5.jpeg" alt="Notre équipe" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Notre liste -->
+        <section class="mb-16">
+            <div class="grid md:grid-cols-2 gap-8 items-start">
+                <div>
+                    <img src="images/mouvement/mouvement3.jpeg" alt="Notre équipe" class="rounded-lg shadow-lg">
+                </div>
+                <div>
+                    <h2 class="text-3xl font-heading font-bold text-plessis-orange mb-6">Une liste diverse et engagée
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        Notre liste est un véritable mélange de profils, de métiers, de compétences et d'expériences.
+                        Elle rassemble des femmes et des hommes aux parcours variés, engagés, qui connaissent le terrain
+                        et partagent l'envie de s'investir concrètement pour le Plessis-Bouchard.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Images complémentaires -->
+        <section class="mb-16">
+            <div class="grid md:grid-cols-3 gap-6">
+                <img src="images/mouvement/mouvement2.jpeg" alt="Notre mouvement"
+                    class="rounded-lg shadow-lg object-cover h-80 w-full">
+                <img src="images/mouvement/mouvement10.jpeg" alt="Notre mouvement"
+                    class="rounded-lg shadow-lg object-cover h-80 w-full">
+                <img src="images/mouvement/mouvement1.jpeg" alt="Notre mouvement"
+                    class="rounded-lg shadow-lg object-cover h-80 w-full">
+            </div>
+        </section>
+
+        <!-- Section 3: Nos valeurs -->
+        <section class="mb-16">
+
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <div class="bg-white rounded-lg">
+                    <h2 class="text-3xl font-heading font-bold text-plessis-purple mb-6">L'origine de notre aventure
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        Nous venons de sensibilités diverses, de gauche, de droite et du centre, toutes modérées, unis
+                        par une même volonté : agir concrètement pour notre commune, loin des postures et des divisions.
+                        Ce qui nous rassemble est plus fort que ce qui nous distingue.
+                    </p>
+                </div>
+                <img src="images/mouvement/mouvement6.jpeg" alt="Notre engagement"
+                    class="rounded-lg shadow-lg object-cover">
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <img src="images/mouvement/mouvement9.jpeg" alt="Notre engagement"
+                    class="rounded-lg shadow-lg object-cover">
+                <div class="bg-white pt-8 rounded-lg">
+                    <h2 class="text-3xl font-heading font-bold text-plessis-orange mb-6">Un nouveau souffle pour
+                        Le Plessis-Bouchard</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        Nous portons des valeurs progressistes. Nous souhaitons pour le Plessis-Bouchard accompagner son
+                        évolution par des idées novatrices, tout en respectant ce qui fait son identité, son histoire et
+                        son âme. Un nouveau souffle pour le Plessis-Bouchard, c'est un projet de terrain, construit avec
+                        vous et pour vous.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galerie action finale -->
+        <section class="mb-16">
+            <div class="grid md:grid-cols-3 gap-6">
+                <img src="images/mouvement/mouvement4.jpeg" alt="Action terrain"
+                    class="rounded-lg shadow-lg object-cover h-64">
+                <img src="images/mouvement/mouvement8.jpeg" alt="Action terrain"
+                    class="rounded-lg shadow-lg object-cover h-64">
+                <img src="images/mouvement/mouvement11.jpeg" alt="Action terrain"
+                    class="rounded-lg shadow-lg object-cover h-64">
+            </div>
+        </section>
+    </main>
+
+    <script>
+        injectFooter();
+    </script>
+</body>
+
+</html>
