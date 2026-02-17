@@ -1,5 +1,100 @@
 // components.js
 
+const teamImagePaths = [
+    'images/equipe/lounes.webp',
+    'images/equipe/lindsey.webp',
+    'images/equipe/pierre.webp',
+    'images/equipe/catherine.webp',
+    'images/equipe/dominique.png',
+    'images/equipe/alexandra.webp',
+    'images/equipe/baptiste.webp',
+    'images/equipe/isabelle.webp',
+    'images/equipe/herve.webp',
+    'images/equipe/stephanie.webp',
+    'images/equipe/yohan.webp',
+    'images/equipe/corinne.webp',
+    'images/equipe/stephane.webp',
+    'images/equipe/virginie.webp',
+    'images/equipe/guillaume.webp',
+    'images/equipe/celine.webp',
+    'images/equipe/marc.webp',
+    'images/equipe/arwen.webp',
+    'images/equipe/thierry.webp',
+    'images/equipe/erika.webp',
+    'images/equipe/michel.webp',
+    'images/equipe/teresa.webp',
+    'images/equipe/jerome.webp',
+    'images/equipe/sophie.webp',
+    'images/equipe/hicham.webp',
+    'images/equipe/anne-sophie.webp',
+    'images/equipe/matheo.webp',
+    'images/equipe/nathalie.webp',
+    'images/equipe/vincent.png'
+];
+
+const programmeImagePaths = [
+    'images/programme/coulee-verte.jpg',
+    'images/programme/police.png',
+    'images/programme/petite-enfance.webp',
+    'images/programme/seniors.png',
+    'images/programme/convivialite.png',
+    'images/programme/commerce.png'
+];
+
+function preloadTeamImages() {
+    if (window.__teamImagesPreloaded) {
+        return;
+    }
+
+    window.__teamImagesPreloaded = true;
+
+    const uniquePaths = [...new Set(teamImagePaths)];
+
+    const warmImageCache = () => {
+        uniquePaths.forEach((path, index) => {
+            setTimeout(() => {
+                const image = new Image();
+                image.decoding = 'async';
+                image.src = path;
+            }, index * 25);
+        });
+    };
+
+    if ('requestIdleCallback' in window) {
+        window.requestIdleCallback(warmImageCache, { timeout: 1500 });
+        return;
+    }
+
+    setTimeout(warmImageCache, 200);
+}
+
+function preloadProgrammeImages() {
+    if (window.__programmeImagesPreloaded) {
+        return;
+    }
+
+    window.__programmeImagesPreloaded = true;
+
+    const uniquePaths = [...new Set(programmeImagePaths)];
+
+    const warmImageCache = () => {
+        uniquePaths.forEach((path, index) => {
+            setTimeout(() => {
+                const image = new Image();
+                image.decoding = 'async';
+                image.src = path;
+            }, index * 25);
+        });
+    };
+
+    if ('requestIdleCallback' in window) {
+        window.requestIdleCallback(warmImageCache, { timeout: 1500 });
+        return;
+    }
+
+    setTimeout(warmImageCache, 200);
+}
+
 function injectHeader(activePage = '') {
     const navHTML = `
     <!-- NAVIGATION -->
@@ -54,6 +149,9 @@ function injectHeader(activePage = '') {
             mobileMenu.classList.toggle('hidden');
         });
     }
+
+    preloadTeamImages();
+    preloadProgrammeImages();
 }
 
 function injectFooter() {
